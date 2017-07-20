@@ -1,0 +1,378 @@
+from PIL import Image
+
+# RGB values for recoloring.
+darkBlue = (0, 51, 76)
+red = (217, 26, 33)
+lightBlue = (112, 150, 158)
+yellow = (252, 227, 166)
+
+# Import image.
+my_image = Image.open("gang.jpg") #change IMAGENAME to the path on your computer to the image you're using
+image_list = my_image.getdata() #each pixel is represented in the form (red value, green value, blue value, transparency). You don't need the fourth value.
+image_list = list(image_list) #Turns the sequence above into a list. The list can be iterated through in a loop.
+
+recolored = [] #list that will hold the pixel data for the new image.
+
+#YOUR CODE to loop through the original list of pixels and build a new list based on intensity should go here.
+for pixel in image_list:
+    intensity = pixel[0] + pixel[1] + pixel[2]
+
+    if intensity <182:
+        recolored.append(darkBlue)
+    elif intensity>=182 and intensity<364:
+        recolored.append(red)
+    elif intensity>=364 and intensity<546:
+        recolored.append(lightBlue)
+    elif intensity >=546:
+        recolored.append(yellow)
+
+# Create a new image using the recolored list. Display and save the image.
+new_image = Image.new("RGB", my_image.size) #Creates a new image that will be the same size as the original image.
+new_image.putdata(recolored) #Adds the data from the recolored list to the image.
+new_image.show() #show the new image on the screen
+new_image.save("recolored.jpg", "jpeg") #save the new image as "recolored.jpg"
+
+shopping_bag = ["t-shirt", "hoodie", "shoes", "bras",]
+food = [""]
+
+def OnList(big_bag)
+    for item in big_bag:
+        print(item)
+
+OnList(shopping_bag)
+OnList()
+
+
+clothes = 'hoodies', 'bras', 'face masks'
+shops = 'h&m', 'urban outfitters', 'goodwill', 'adidas', 'zumiez'
+food = 'fruit', 'sandwiches', 'ramen'
+favs = [clothes, 'money', shops, food]
+
+print(favs)
+
+<!doctype html/>
+
+<html>
+
+<body style="background-color:e3cfc2;""font-family:verdana;"
+
+<h1>celeste pirtle-cooper</h1>
+
+<h3> i barely talk but i communicate udigg.
+
+<p>
+
+also i'm 17 and a senior
+
+<p>
+
+likes: music, tumblr, writing, food, netflix, hulu
+
+<p>
+
+dislikes: war, anything with 6+ legs, being touched
+
+<p>
+
+fun fact: i like to online shop without buying anything
+
+</h3>
+#list.index(obj)     #object to be found out
+
+#!/usr/bin/python
+
+clothes = [123, 'hoodies', 'bras', 'face masks'];
+
+print("index for bras : ", clothes.index( 'bras' ))
+print("index for hoodies : ", clothes.index( 'hoodies' ))
+print("index for face masks : ", clothes.index( 'face masks' ))
+
+from random import *
+
+#Create the list of words you want to choose from.
+app = ['caeasar salad','garlic knots','pasta','wings']
+main = ['pepperoni pizza','cheese pizza','meat lovers pizza','supreme pizza',
+'pesto pizza','white pie','bbq chicken']
+drink = ['water','tea','sprite','coke','coffee','alcoholic bev.']
+desert = ['desert strips','cookie','brownie']
+
+#Generates a random integer.
+x = randint(0, len(app)-1)
+y = randint(0, len(main)-1)
+z = randint(0, len(drink)-1)
+w = randint(0, len(drink)-1)
+
+print(app[x])
+print(main[y])
+print(drink[z])
+print(desert[w])
+
+void setup() {
+  pinMode(13, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(13, HIGH);
+  delay(1000);
+  digitalWrite(13, LOW);
+  delay(1000);
+}
+
+random_numbers = [29, 68, 69, 30, 20, 91, 62, 28, 36, 67, 40, 71, 71, 82, 71, 84, 96, 34, 40, 92, 57, 56, 86, 63, 88, 79, 48, 22, 12, 74,
+86, 54, 94, 19, 73, 25, 23, 72, 74, 56,53, 52, 55, 10, 37, 48, 82, 84, 57, 45, 85, 48, 58, 56, 95, 21, 47, 98, 71, 38, 24, 51, 28, 71,
+52, 33, 78, 78, 77, 24,17, 31, 85, 87, 86, 63, 23, 73, 40, 64, 35, 29, 10, 43, 99, 38, 63, 61, 76, 91, 64, 48, 23, 26, 19, 21, 17, 49, 15, 62]
+
+print(random_numbers)
+
+random_numbers = [29, 68, 69, 30, 20, 91, 62, 28, 36, 67, 40, 71, 71, 82, 71, 84, 96, 34, 40, 92, 57, 56, 86, 63, 88, 79, 48, 22, 12, 74,
+86, 54, 94, 19, 73, 25, 23, 72, 74, 56,53, 52, 55, 10, 37, 48, 82, 84, 57, 45, 85, 48, 58, 56, 95, 21, 47, 98, 71, 38, 24, 51, 28, 71,
+52, 33, 78, 78, 77, 24,17, 31, 85, 87, 86, 63, 23, 73, 40, 64, 35, 29, 10, 43, 99, 38, 63, 61, 76, 91, 64, 48, 23, 26, 19, 21, 17, 49]
+
+def multiples_of_5()
+print(random_numbers)
+
+
+from turtle import *
+import math
+
+# Name your Turtle.
+t = Turtle()
+
+# Set Up your screen and starting position.
+setup(500,500)
+x_pos = 0
+y_pos = 0
+t.setposition(x_pos, y_pos)
+
+### user input
+shape = input('name the shape: ')
+print('shape: ', shape)
+
+# Close window on click.
+exitonclick()
+
+print("Skipping loop")
+pineapple = 0
+for counter in range(6):
+    print ("counter",counter)
+    pineapple = pineapple + 1
+    print (pineapple)
+
+class User:
+    def __init__(self, newUsername, newUserID):
+        self.username = newUsername
+        self.userID = newUserID
+        self.friends = []
+
+    def getUserName(self):
+        return self.username
+
+    def getUserID(self):
+        return self.userID
+
+    def getFriends(self):
+        return self.friends
+
+    def addFriends(self, friendID):
+        self.friends.append(friendID)
+
+
+class Network:
+    def __init__(self):
+        self.users=[]
+
+    def numUsers(self):
+        return len(self.users)
+
+    def addUser(self,username):
+        user_id=len(self.users)
+        self.users.append(User(username,user_id))
+
+    def getUserID(self, username):
+        for user in self.users:
+            if username==user.getUserName():
+                user_id=user.getUserID()
+        return user_id
+
+    def addConnection(self, user1, user2):
+        user1_id=self.getUserID(user1)
+        user2_id=self.getUserID(user2)
+
+        user1 = self.users[user1_id]
+        user2 = self.users[user2_id]
+
+        self.users[user2_id].addFriends(user1_id)
+        self.users[user1_id].addFriends(user2_id)
+
+    def printUsers(self):
+        print("this is the network")
+        for user in self.users:
+            print("\tUser {}: {}".format(user.getUserID, user.getUserName))
+
+    def printConnections(self, username):
+        user=self.users[self.getUserId(username)]
+        connections=user.getFriends()
+        print("\t{}'s connections:".formsy(user.getUserName()))
+        for friendID in connections:
+            friend=self.users[friends]
+            print("\t{}".format(friend.getUserName()))
+
+def main():
+#celeste = User("celeste", "1")
+#print(celeste.getUserName())
+#print(celeste.getUserID())
+#soleil =  User("soleil", "2")
+#print(soleil.getUserName())
+#print(soleil.getUserID())
+
+    mynetwork=Network()
+    done=False
+    while not done:
+        action=input("\nwhat u tryna do?? add user(u); connection(c), print users (p), print connectionsv(pc), exit(e)")
+        if action=="u":
+            username=input("what username?")
+            mynetwork.addUser(username)
+        elif action=="c":
+            if mynetwork.numUsers()<2:
+                print("error. not enough users.")
+                break
+            else:
+                user1=input("first user?")
+                user2=input("second user?")
+            mynetwork.addConnection(user1,user2)
+        elif action=="p":
+            mynetwork.printUsers()
+        elif action=="pc":
+            user=input("what user?")
+            mynetwork.printConnections(user)
+        elif action=="e":
+            print("bye then lmao")
+        else:
+            print("huh, try again.")
+
+if __name__ == '__main__':
+    main()
+
+from turtle import *
+import math
+
+# Name your Turtle.
+frank = Turtle()
+
+# Set Up your screen and starting position.
+setup(500,500)
+x_pos = 0
+y_pos = 0
+frank.setposition(x_pos, y_pos)
+
+### Write your code below:
+for x in range(0, 4):
+    frank.forward(100)
+    frank.right(90)
+
+
+# Close window on click.
+exitonclick()
+
+from turtle import *
+import math
+
+# Name your Turtle.
+frank = Turtle()
+
+# Set Up your screen and starting position.
+setup(500,500)
+x_pos = 0
+y_pos = 0
+frank.setposition(x_pos, y_pos)
+
+### Write your code below:
+for x in range(0, 3):
+    frank.forward(100)
+    frank.right(120)
+
+
+# Close window on click.
+exitonclick()
+
+class Vehicle:
+    def __init__(self, newName):
+        self.name = newName
+        self.wheels = 0
+        self.ignition = False
+        self.passengers = []
+
+    def num_wheels(self, newWheels):
+        self.wheels = newWheels
+
+    def ignition(self,key):
+        self.ignition - key
+
+    def add_passenger(self, newPassenger):
+        self.passengers.append(newPassenger)
+
+def main():
+    myCar = Vehicle("Slingshot")
+    myCar.num_wheels(4)
+    myCar.add_passenger("celeste")
+    myCar.add_passenger("yo daddy")
+    print(myCar.name, myCar.wheels, myCar.passengers)
+
+if __name__ == '__main__':
+    main()
+
+#plots
+start = '''
+one morning you decide to go to the mall. there are two ways to get there,
+taking a quicker shortcut through the woods or taking a longer shortcut by side street.
+'''
+
+crackhead = '''
+...you run into a crackhead! he's been hiding in the woods and you have
+infiltrated his safe space! he attempts to attack you! do you run or fight?
+'''
+
+mall = '''
+... you're walking down the street to the mall, but then it starts raining. the
+mall is a mile away, but you think the rain is gonna come down harder really soon.
+do you make a mad dash for the mall or turn and go back home?
+'''
+
+lostwoods = '''
+you fought the crackhead! it was indeed a battle, but he had a knife and stabbed
+you. he stole your money and went off to buy some more crack, along with other
+drugs.
+THE END
+'''
+
+print(start)    #BEGINNING
+done = False
+find_crackhead = False
+
+print("type 'woods' to go left or 'street' to go right.")
+while not done:
+    user_input = input()
+    if user_input == "woods": #OPTION 1
+        print("you decide to go through the woods by turning left and...")
+        done = True
+        find_crackhead = True
+        print(crackhead)
+    elif user_input == "street": #OPTION 2
+        print("you choose to go by side streets by turning right and ...")
+        done = True
+        print(mall)
+    else:
+        print("try again")
+        done = False
+
+if find_crackhead == True: #OPTION 1 CONT'D
+    while not done:
+        print("type 'fight' to fight the crackhead or 'run' to run away from him.")
+        user_input = input()
+            if user_input == "fight": #OPTION 1 CHOICE A
+                print("you decide to fight the crackhead and..." + lostwoods)
+            elif user_input == 'run': #OPTION 1 CHOICE B
+                print("you decide to run and..")
+            else:
+                print("try again")
+                done = False
